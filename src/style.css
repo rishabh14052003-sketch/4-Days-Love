@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .slide-up {
+    animation: slideUp 1s ease-out;
+  }
+  
+  .season-card {
+    transition: all 0.3s ease;
+  }
+  
+  .season-card:hover {
+    transform: translateY(-10px) scale(1.05);
+  }
+  
+  .emoji-animate {
+    animation: bounce 2s infinite;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .love-bg {
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+  }
+  
+  .season-summer {
+    background: linear-gradient(135deg, #f9ca24 0%, #f0932b 100%);
+  }
+  
+  .season-winter {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  }
+  
+  .season-monsoon {
+    background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+  }
+  
+  .season-spring {
+    background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+  }
+}
